@@ -1,0 +1,399 @@
+/* Mobile */
+@media (max-width: 480px) {
+	.hide-on-mobile {
+		display: none;
+	}
+}
+
+/* Tablet */
+
+@media (min-width: 481px) {
+	.hide-on-tablet {
+		display: none !important;
+	}
+
+	.desktop-nav-search-list {
+		display: none;
+	}
+	
+
+	/* Header */
+
+	.header-text-container {
+		padding: 0 68px;
+	}
+
+	.header-text-container p {
+		font-size: 16px;
+	}
+
+
+	/* Section Register */
+
+	.section-register-container {
+		padding: 40px 100px 0;
+	}
+
+	.section-register-title-styles {
+		font-size: 44px;
+	}
+	
+	.section-register-text-styles {
+		font-size: 16px;
+	}
+	
+	.section-register-btn-container {
+		display: flex;
+		gap: 14px;
+		padding-bottom: 14px;
+	}
+
+	.section-register-email-input {
+		display: flex;
+		border-radius: 8px;
+		border: none;
+		min-height: 50px;
+		align-self: center;
+		flex: 2;
+	}
+
+	.section-register-btn-styles {
+		flex: 1;
+		padding: 12px;
+	}
+
+	.section-register-btn-styles span {
+		display: flex;
+		justify-content: center;
+		font-size: 16px;
+	}
+
+	/* Section ABC */
+
+	.section-abc-container {
+		padding: 30px 80px 0;
+	}
+
+	.section-abc-container h2 {
+		font-size: 14px;
+	}
+
+	.section-abc-container h3 {
+		font-size: 28px;
+		width: 55%;
+	}
+
+	.section-abc-container p {
+		font-size: 18px;
+		width: 55%;
+	}
+
+	.section-abc-blue-border-card-container {
+		margin-bottom: 60px;
+	}
+
+	.section-abc-blue-border-card-container span {
+		font-size: 16px;
+	}
+
+	.section-abc-blue-border-card-container p {
+		font-size: 14px;
+		width: 100%;
+	}
+
+	/* Section Action */
+
+	.section-action-container {
+		padding-left: 80px;
+	}
+
+	/* Section Discover */
+
+	.section-discover-container {
+		padding: 40px 100px 0;
+	}
+
+	.section-discover-container h2 {
+		font-size: 28px;
+		font-weight: 700;
+	}
+
+	.section-discover-container p {
+		font-size: 18px;
+		font-weight: 400;
+	}
+	
+	.section-discover-btn-container {
+		padding-bottom: 24px;
+	}
+
+	/* Section Do More With Trello */
+
+	.section-do-more-with-trello-container {
+		padding: 38px 100px 0;
+	}
+
+	.section-do-more-with-trello-all-cards-container {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 28px;
+		justify-content: center;
+	}
+
+	.section-do-more-with-trello-cards-container {
+		display: flex;
+		flex-direction: column;
+		min-width: 250px;
+		max-width: 251px;
+		flex: 1;
+	}
+
+	
+}
+
+/* Desktop */
+
+@media (min-width: 1024px) {
+
+	.hide-on-desktop {
+		display: none;
+	}
+
+	.nav-container {
+		gap: 12px;
+		padding-bottom: 28px;
+		min-height: 60px;
+	}
+
+	.desktop-nav-search-list {
+		display: flex;
+		flex: 4;
+		flex-direction: row;
+		list-style-type: none;
+		gap: 24px;
+		padding-right: 24px;
+	}
+
+	.nav-desktop-btn1-style,
+	.nav-desktop-btn2-style {
+		display: flex;
+		flex: 1;
+		font-size: 18px;
+		border: none;
+		line-height: 24px;
+	}
+    .nav-desktop-btn1-style {
+        background-color: white;
+    }
+    
+    .nav-desktop-btn2-style {
+        background-color: var(--btn-bg-color);
+        color: white;
+		padding: 10px;
+    }
+    
+    .nav-desktop-btn2-style span {
+        display: inline-block;
+        text-align: left;
+    }
+
+	/* Header */
+
+	.header-text-container {
+		padding: 0 80px;
+	}
+
+	/* Section Register */
+
+	.section-register-container {
+		display: flex;
+		flex-direction: row;
+		padding: 40px 40px 80px;
+		background-size: 100% 100px;
+	}
+
+	.section-register-title-styles {
+		text-align: start;
+		width: 100%;
+	}
+
+	.section-register-text-styles {
+		text-align: start;
+		width: 100%;
+		font-size: 20px;
+	}
+
+	.section-register-vertical-align-container {
+		width: 50%;
+	}
+
+	.section-register-btn-container {
+		display: flex;
+		flex-direction: column;
+		width: 90%;
+	}
+
+	.section-register-email-input {
+		width: 90%;
+		align-self: flex-start;
+	}
+
+	.section-register-btn-styles {
+		width: 50%;
+	}
+
+	.section-register-video-container {
+		justify-content: flex-start;
+		width: 50%;
+	}
+
+	.section-register-image-container {
+		width: 50%;
+		align-content: center;
+		
+	}
+
+	/* Section ABC */
+
+	.section-abc-container {
+		padding: 40px;
+	}
+
+	.section-abc-image-container {
+		width: 60%;
+		align-self: flex-end;
+	}
+
+	.section-abc-blue-border-card-container {
+		width: 30%;
+		align-self: flex-start;
+	}
+
+	/* Section Action */
+	
+	.section-action-desktop-align-container {
+		display: flex;
+		flex-direction: row;
+	}
+
+	.section-action-project-card {
+		flex: 1;
+	}
+
+	.section-action-folder-icon-container {
+		top: -30px;
+		width: 50px;
+	}
+
+	.section-action-meeting-card {
+		flex: 1;
+	}
+
+	.section-action-incorporation-card {
+		display: flex !important;
+		flex-direction: column;
+		flex: 1;
+		box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+		border-top: 24px solid rgba(0, 160, 13, 0.521);
+		border-top-left-radius: 8px;
+		border-top-right-radius: 8px;
+		padding: 14px;
+	}
+
+	.section-action-icons-container {
+		position: relative;
+		top: -30px;
+		width: 50px;
+		background-color: white;
+	}
+
+	.section-action-leaf-icon-container img {
+		width: 100%;
+		padding: 8px;
+	}
+
+	.section-action-meeting-card h3 {
+		padding-bottom: 12px;
+	}
+
+	.section-action-incorporation-card h3 {
+		width: 100%;
+		padding-bottom: 12px;
+	}
+
+	/* Section Discover */
+
+	.section-discover-container {
+		padding: 40px 80px 0;
+	}
+
+	.section-discover-schedule-calendar-cards {
+		display: flex;
+		gap: 32px;
+	}
+
+	.section-discover-schedule-calendar-cards-image-container {
+		flex: 1;
+		padding-top: 40px;
+		padding-bottom: 40px;
+	}
+
+	.section-discover-shedule-calendar-cards-text-container {
+		flex: 1;
+		text-align: center;
+		padding-top: 24px;
+	}
+
+	.flex-direction-row-reverse {
+		display: flex;
+		flex-direction: row-reverse;
+	}
+
+	/* Section Do More With Trello */
+
+	.section-do-more-with-trello-cards-container {
+		justify-content: space-between;
+	}
+
+	.section-do-more-with-trello-cards-container p {
+		width: 100%;
+	}
+
+	.section-do-more-with-trello-container p {
+		font-size: 18px;
+	}
+}
+
+/* Desktop XXL */
+
+@media (min-width: 1440px) {
+	.hide-on-desktop-xxl {
+		display: none;
+	}
+
+	.nav-container {
+		padding-right: 40px;
+		padding-left: 40px;
+	}
+
+	.desktop-nav-search-list {
+		gap: 40px;
+	}
+
+	.nav-desktop-btn1-style {
+		padding: 24px 0 24px 0;
+	}
+
+	.nav-desktop-btn1-style,
+	.nav-desktop-btn2-style {
+		justify-content: center;
+		padding: 18px;
+	}
+
+	/* Section Register */
+
+	.section-register-container {
+		padding-right: 100px;
+		padding-left: 100px;
+	}
+}

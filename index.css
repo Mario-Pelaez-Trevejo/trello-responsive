@@ -1,0 +1,718 @@
+@import url(/responsive.css);
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+html,
+body {
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+		Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+	width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd,
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+
+ul {
+	list-style-type: none;
+}
+
+a {
+	color: inherit;
+	text-decoration: none;
+}
+
+:root {
+	--btn-bg-color: #5959ff;
+	--text-grey-color: rgb(14, 14, 14);
+}
+
+.play-icon {
+	color: white;
+	fill: white;
+	stroke: white;
+}
+
+.blue-links-styles {
+	color: rgb(0, 81, 255);
+	text-decoration: underline;
+}
+
+.links-styles:hover {
+	cursor: pointer;
+}
+
+/* Nav */
+
+.nav-container {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 24px 30px 14px;
+}
+
+.desktop-nav-search-list {
+	display: none;
+}
+
+.nav-desktop-btn1-style,
+.nav-desktop-btn2-style {
+	display: none;
+}
+
+/* Header */
+
+.header-text-container {
+	background-color: rgb(194, 228, 250);
+	line-height: 1.7;
+	font-size: 18px;
+	font-weight: 600;
+	text-align: center;
+	margin: 0 auto;
+}
+
+.header-text-container p {
+	margin: 0;
+	padding: 20px 0;
+	color: rgb(53, 57, 77);
+}
+
+/* Section Register */
+
+.section-register-container {
+	background-color: rgb(185, 3, 185);
+	color: white;
+	margin: 0 auto;
+	border-bottom: 1px solid black;
+	/* background-image: url(/media/images/white-wave-bg.svg);
+	background-repeat: no-repeat;
+	background-position: bottom;
+	background-size: 100% 300px; */
+	background: url(/media/images/header-wave.svg) center bottom -0.5px / 100% 14%
+			no-repeat scroll padding-box border-box,
+		linear-gradient(60deg, rgb(82, 67, 170), rgb(237, 80, 180)) 0% 0% / auto
+			repeat scroll padding-box border-box rgb(82, 67, 170);
+	background-blend-mode: normal, normal;
+	color: rgb(255, 255, 255);
+}
+
+.section-register-title-styles {
+	padding: 80px 24px 0;
+	text-align: center;
+	font-size: 32px;
+}
+
+.section-register-text-styles {
+	display: block;
+	text-align: center;
+	font-size: 24px;
+	padding: 12px 24px 30px;
+}
+
+.section-register-btn-container {
+	display: flex;
+	justify-content: center;
+}
+
+.section-register-btn-styles {
+	width: 95%;
+	padding: 24px;
+	color: white;
+	background-color: var(--btn-bg-color);
+	border: none;
+	border-radius: 8px;
+	font-size: 24px;
+}
+
+.section-register-btn-styles span {
+	font-size: 18px;
+}
+
+.section-register-video-container {
+	display: flex;
+	justify-content: center;
+	padding: 12px 0;
+	color: rgb(207, 207, 207);
+}
+
+.section-register-video-container a {
+	display: flex;
+	gap: 12px;
+	align-items: center;
+}
+
+.section-register-image-container {
+	display: flex;
+	align-items: center;
+	flex: 1;
+}
+
+.section-register-image-container img {
+	width: 100%;
+}
+
+/* Section trello ABC */
+
+.section-abc-container {
+	display: flex;
+	flex-direction: column;
+	gap: 12px;
+	padding: 12px;
+	background: linear-gradient(
+		180deg,
+		white 30%,
+		rgb(213, 240, 255) 4 0%,
+		rgb(200, 233, 255) 30%
+	);
+}
+
+.section-abc-container h2 {
+	font-size: 18px;
+}
+
+.section-abc-container h3 {
+	font-size: 22px;
+	color: var(--text-grey-color);
+}
+
+.section-abc-container p {
+	color: var(--text-grey-color);
+	font-weight: 600;
+	font-size: 20px;
+}
+
+.section-abc-image-container {
+	display: flex;
+	flex: 1;
+	align-items: center;
+}
+
+.section-abc-image-container img {
+	width: 100%;
+}
+
+.section-abc-blue-border-card-container {
+	display: flex;
+	flex: 1;
+	flex-direction: column;
+	align-self: center;
+	background-color: white;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+	border-left: 8px solid rgb(104, 207, 248);
+	border-radius: 4px;
+	padding: 14px;
+	gap: 8px;
+}
+
+.section-abc-blue-border-card-container span {
+	font-size: 18px;
+	font-weight: 700;
+	color: var(--text-grey-color);
+}
+
+.section-abc-blue-border-card-container p {
+	font-size: 16px;
+	font-weight: 700;
+	color: var(--text-grey-color);
+	line-height: 1.5;
+}
+
+/* Section Action */
+
+.section-action-container {
+	padding: 14px;
+}
+
+.section-action-container h2 {
+	padding-bottom: 12px;
+	font-size: 12px;
+}
+
+.section-action-container h3 {
+	font-size: 22px;
+	font-weight: 600;
+	width: 55%;
+	padding-bottom: 40px;
+}
+
+.section-action-cards-container {
+	display: flex;
+	gap: 24px;
+	margin-bottom: 24px;
+}
+
+.section-action-project-card {
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+	border-top: 24px solid rgb(255, 123, 0);
+	border-top-left-radius: 8px;
+	border-top-right-radius: 8px;
+	padding: 14px;
+}
+
+.section-action-icons-container {
+	position: relative;
+	top: -12px;
+	width: 40px;
+	background-color: white;
+}
+
+.section-action-icons-container img {
+	width: 100%;
+}
+
+.section-action-project-card h3 {
+	padding-bottom: 12px;
+	width: 100%;
+}
+
+.section-action-meeting-card {
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+	border-top: 24px solid rgb(0, 68, 255);
+	border-top-left-radius: 8px;
+	border-top-right-radius: 8px;
+	padding: 8px;
+}
+
+.section-action-container p {
+	padding-bottom: 24px;
+}
+
+.section-action-btn-styles {
+	background-color: white;
+	border: 1px solid;
+	border-color: var(--btn-bg-color);
+	border-radius: 4px;
+	padding: 12px;
+}
+
+/* Section Discover */
+
+.section-discover-container {
+	background-color: #008cff;
+	display: flex;
+	flex-direction: column;
+	padding: 16px;
+}
+
+.section-discover-container h2 {
+	color: white;
+	font-size: 20px;
+	font-weight: 600;
+	align-self: center;
+	padding-bottom: 12px;
+}
+
+.section-discover-container p {
+	color: white;
+	font-size: 18px;
+	font-weight: 500;
+	text-align: center;
+	padding-bottom: 18px;
+}
+
+.section-discover-btn-container {
+	display: flex;
+	justify-content: center;
+}
+
+.section-discover-btn-styles {
+	background-color: white;
+	border: 1px solid;
+	border-color: var(--btn-bg-color);
+	border-radius: 4px;
+	padding: 12px;
+}
+
+/* Schedule and Calendar Cards */
+
+.section-discover-schedule-calendar-cards {
+	background-color: white;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+	padding: 14px;
+	margin-top: 18px;
+}
+
+.section-discover-schedule-calendar-cards h3 {
+	font-size: 14px;
+	font-weight: 700;
+	padding-bottom: 18px;
+}
+
+.section-discover-schedule-calendar-cards p {
+	color: black;
+	font-size: 16px;
+	text-align: start;
+}
+
+.section-discover-schedule-calendar-cards span {
+	display: block;
+	color: rgb(0, 47, 255);
+	text-decoration: underline;
+	font-size: 18px;
+	font-weight: 600;
+}
+
+.section-discover-schedule-calendar-cards span:hover {
+	cursor: pointer;
+}
+
+.section-discover-schedule-calendar-cards-image-container {
+	padding-bottom: 18px;
+}
+
+.section-discover-schedule-calendar-cards-image-container img {
+	width: 100%;
+}
+
+/* Section Do More With Trello */
+
+.section-do-more-with-trello-container {
+	background-color: white;
+	padding: 14px;
+}
+
+.section-do-more-with-trello-container h2 {
+	font-size: 14px;
+	padding-bottom: 8px;
+}
+
+.section-do-more-with-trello-container h3 {
+	font-size: 24px;
+	padding-bottom: 14px;
+}
+
+.section-do-more-with-trello-container p {
+	font-weight: 600;
+	padding-bottom: 24px;
+}
+
+.section-do-more-with-trello-cards-container {
+	background-color: rgba(230, 230, 230, 0.315);
+	margin-bottom: 18px;
+	padding: 16px;
+	border-radius: 4px;
+	justify-content: space-between;
+}
+
+.section-do-more-with-trello-cards-image-container {
+	max-width: 100px;
+}
+
+.section-do-more-with-trello-cards-image-container img {
+	width: 100%;
+}
+
+.section-do-more-with-trello-cards-container h4 {
+	font-size: 20px;
+	font-weight: 700;
+	padding-bottom: 8px;
+}
+
+.section-do-more-with-trello-cards-container p {
+	font-size: 14px;
+	padding-bottom: 14px;
+}
+
+.section-do-more-with-trello-btn-styles {
+	background-color: white;
+	border: 1px solid;
+	border-color: var(--btn-bg-color);
+	border-radius: 4px;
+	padding: 12px;
+}
+
+.section-do-more-with-trello-btn-styles span {
+	font-weight: 700;
+}
+
+/* Section Women Who Code */
+
+.section-women-who-code-card-container {
+	padding: 20px;
+}
+
+.section-women-who-code-white-part-container {
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+	padding: 24px;
+	border-top-left-radius: 8px;
+	border-top-right-radius: 8px;
+	display: flex;
+	flex-direction: column;
+}
+
+.section-women-who-code-white-part-container p {
+	font-size: 24px;
+	padding-bottom: 14px;
+}
+
+.separator {
+	border: 1px solid grey;
+}
+
+.section-women-who-code-responsive-box {
+	display: flex;
+	flex-direction: column;
+}
+
+.section-women-who-code-logo-container {
+	padding: 12px 0;
+	width: 100px;
+}
+
+.section-women-who-code-logo-container img {
+	width: 100%;
+}
+
+.section-women-who-code-span-styles {
+	font-size: 18px;
+	font-weight: 600;
+}
+
+.section-women-who-code-blue-span-container {
+	color: rgb(0, 68, 255);
+	text-decoration: underline;
+	cursor: pointer;
+}
+
+.section-women-who-code-purple-container {
+	color: white;
+	background-color: rgb(162, 0, 255);
+	padding: 20px;
+	border-bottom-left-radius: 8px;
+	border-bottom-right-radius: 8px;
+}
+
+.section-women-who-code-purple-container p {
+	font-weight: 700;
+	font-size: 24px;
+	padding-bottom: 12px;
+}
+
+.section-women-who-code-purple-container span {
+	text-decoration: underline;
+	cursor: pointer;
+}
+
+/* Section Price */
+
+.section-price-container {
+	background: rgb(255, 255, 255);
+	background: linear-gradient(
+		180deg,
+		rgba(255, 255, 255, 1) 0%,
+		rgba(128, 198, 255, 1) 17%,
+		rgba(128, 198, 255, 1) 83%,
+		rgba(255, 255, 255, 1) 98%
+	);
+	padding: 0 20px;
+}
+
+.section-price-compare-plans-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 12px 24px;
+}
+
+.section-price-compare-plans-container h2 {
+	font-size: 24px;
+	font-weight: 600;
+}
+
+.section-price-compare-plans-container p {
+	font-size: 16px;
+	font-weight: 600;
+	padding: 8px 0 12px;
+}
+
+.section-price-compare-btn-styles {
+	background-color: var(--btn-bg-color);
+	padding: 14px;
+	border: none;
+	border-radius: 4px;
+}
+
+.section-price-compare-btn-styles span {
+	color: white;
+}
+
+.section-price-all-cards-container {
+	display: flex;
+	flex-direction: column;
+	gap: 12px;
+}
+
+.section-price-cards {
+	border: 1px solid rgb(172, 172, 172);
+	display: flex;
+	flex-direction: column;
+	background-color: white;
+	padding: 18px 12px;
+	flex: 1;
+	gap: 18px;
+}
+
+.section-price-cards h2 {
+	font-size: 16px;
+}
+
+.section-price-cards h3 {
+	font-size: 18px;
+	font-weight: 600;
+}
+
+.section-price-cards h3 span {
+	font-size: 50px;
+	font-weight: 400;
+}
+
+.section-price-cards-grey-span-styles {
+	color: rgb(156, 156, 156);
+	font-size: 12px;
+}
+
+.section-price-cards p {
+	font-size: 16px;
+	font-weight: 600;
+}
+
+.section-price-cards-btn-span-container {
+	display: flex;
+	flex-direction: column;
+	gap: 12px;
+}
+
+.section-price-btn-styles {
+	background-color: white;
+	border-color: #80c6ff;
+	border-radius: 4px;
+	padding: 12px;
+	width: 200px;
+}
+
+.section-price-cards-btn-span-container span {
+	color: rgb(68, 68, 252);
+	text-decoration: underline;
+	padding-bottom: 12px;
+	font-weight: 600;
+}
+.section-price-btn-styles span {
+	color: black;
+	text-decoration: none;
+}
+
+/* Section Promo */
+
+.section-promo-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 40px 20px;
+}
+
+.section-promo-container p {
+	font-size: 21px;
+	font-weight: 600;
+	text-align: center;
+	padding-bottom: 16px;
+}
+
+/* Section Register Purple Pre Footer */
+
+.section-register-purple-pre-footer {
+	background-color: rgb(183, 0, 255);
+	padding: 14px 20px;
+	display: flex;
+	flex-direction: column;
+	gap: 12px;
+}
+
+.section-register-purple-pre-footer h2 {
+	color: white;
+	font-size: 24px;
+	font-weight: 700;
+	text-align: center;
+}
+
+.section-register-btn-styles {
+	flex: 1;
+	max-height: 50px;
+	padding: 10px;
+	margin-bottom: 20px;
+}
+
+.section-register-btn-styles span {
+	color: white;
+}
+
+/* Footer */
+
+.footer-container {
+	background-color: rgb(23, 43, 77);
+	color: white;
+	padding: 40px 24px 30px;
+}
+
+.footer-top-container {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.footer-top-image-container {
+	width: 150px;
+}
+
+.footer-top-image-container img {
+	width: 100%;
+}
+
+.footer-top-container span {
+	font-weight: 700;
+}
+
+.footer-separator {
+	border: 1px solid rgb(182, 182, 182);
+	margin: 12px 0;
+}
+
+.footer-social-networks-container {
+	display: flex;
+}
+
+.footer-select-container {
+	padding: 20px 0;
+}
+
+#language {
+	padding: 20px;
+	background-color: rgb(23, 43, 77);
+	border: none;
+}
+
+.footer-terms-and-privacy-container {
+	display: flex;
+	flex-direction: column;
+	gap: 12px;
+}
